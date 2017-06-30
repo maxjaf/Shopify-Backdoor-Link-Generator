@@ -8,10 +8,8 @@ url = '' #input url of shopify product
 quantity = '' #input quantity of item you want to buy
 size = '' #input item size in the same format as on the website
 
-headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
-website = urlparse(url)
-
 #build xml link
+website = urlparse(url)
 baseurl = 'https://'+website.netloc+'/cart/'
 xml = url+'.xml'
 print('looking for variants using link: {}'.format(xml))
